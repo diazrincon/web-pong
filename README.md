@@ -17,3 +17,6 @@ Los jugadores usan las paletas para pegarle a la pelota hacia un lado u otro, el
 Se debe configurar el número de puntos al que se pacta el juego, con un valor entre 3 como mínimo, y 21 como máximo.
 
 ![Screenshot of PONG from the Atari Arcade](https://upload.wikimedia.org/wikipedia/commons/f/f8/Pong.png)
+
+# Modelado UML inicial (Con base en el código proporcionado)
+![Modelado inicial](design/initial_model.png)
