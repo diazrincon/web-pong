@@ -1,0 +1,15 @@
+head {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+canvas {
+    background: rgb(226, 209, 209);
+    display: block;
+    margin: auto;
+}
