@@ -15,3 +15,5 @@ Pong-Game, simula un partido de tenis de mesa, es un juego en dos dimensiones do
 Los jugadores usan las paletas para pegarle a la pelota hacia un lado u otro, el objetivo consiste en conseguir más puntos que el oponente al finalizar el juego, estos puntos se obtienen cuando el jugador adversario falla al devolver la pelota. 
 
 Se debe configurar el número de puntos al que se pacta el juego, con un valor entre 3 como mínimo, y 21 como máximo.
+
+![Screenshot of PONG from the Atari Arcade](https://upload.wikimedia.org/wikipedia/commons/f/f8/Pong.png)
