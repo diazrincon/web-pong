@@ -3,7 +3,6 @@
  *
  * @class Pong
  */
-
 class Pong {
     constructor(document, canvas, posX, posY) {
         this.document = document;
@@ -13,7 +12,7 @@ class Pong {
         this.context = this.canvas.getContext("2d");
 
         this.paddle = new Rectangle(this.canvas, this.context, (posX + this.canvas.width / 2), posY, "#dddd11");
-        this.paddle.setHeigth(10);
+        this.paddle.setHeight(10);
         this.paddle.setWidth(75);
         this.controlPaddle = new ControlPaddle(this.document, this.canvas, this.context, this.paddle);
 
@@ -29,5 +28,4 @@ class Pong {
         this.controlPaddle.move();
         this.controlBall.move();
     }
-
 }

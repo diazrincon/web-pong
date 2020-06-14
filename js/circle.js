@@ -2,18 +2,13 @@
  * Circle.
  *
  * @class Circle
- * @extends {Figura}
+ * @extends {Figure}
  */
 class Circle extends Figure {
 
     constructor(canvas, context, posX, posY, fillStyle) {
         super(canvas, context, posX, posY, fillStyle);
-        this.radius = 0;
-
-    }
-
-    setRadius(radius) {
-        this.radius = radius;
+        this.setRadius(0);
     }
 
     draw() {
@@ -22,5 +17,9 @@ class Circle extends Figure {
         this.context.fillStyle = this.fillStyle;
         this.context.fill();
         this.context.closePath();
+    }
+
+    setRadius(radius) {
+        this.radius = radius;
     }
 }

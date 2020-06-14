@@ -3,9 +3,7 @@
  *
  * @class KeyCommand
  */
-
-
-var keys = { LEFT: 37, UP: 38, RIGTH: 39, DOWN: 40, NULL: 0 }
+const keys = {LEFT: 37, UP: 38, RIGHT: 39, DOWN: 40, NULL: 0};
 
 class KeyCommand {
 
@@ -17,14 +15,14 @@ class KeyCommand {
     }
 
     keyDown(e) {
-        if (e.keyCode == keys.RIGTH) {
-            codeKey = keys.RIGTH;
-        } else if (e.keyCode == keys.LEFT) {
+        if (e.keyCode === keys.RIGHT) {
+            codeKey = keys.RIGHT;
+        } else if (e.keyCode === keys.LEFT) {
             codeKey = keys.LEFT;
         }
     }
 
-    keyUp(e) {
+    keyUp() {
         codeKey = keys.NULL;
     }
 }

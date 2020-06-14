@@ -7,7 +7,7 @@
 class Figure {
 
     constructor(canvas, context, posX, posY, fillStyle) {
-        if (this.constructor == Figure) {
+        if (this.constructor === Figure) {
             throw new Error("Abstract classes can't be instantiated.");
         }
         this.canvas = canvas;
@@ -21,20 +21,11 @@ class Figure {
         throw new Error("Method 'draw()' must be implemented.");
     }
 
-    goToRigth(delta) {
-        this.posX += delta;
-    }
     goToLeft(delta) {
         this.posX -= delta;
     }
 
-    goToUp(delta) {
-        this.posY -= delta;
+    goToRight(delta)    {
+        this.posX += delta;
     }
-
-    goToDown(delta) {
-        this.posY += delta;
-    }
-
-
 }

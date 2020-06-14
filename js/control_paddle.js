@@ -4,24 +4,21 @@
  * @class ControlPaddle
  * @extends {Control}
  */
-
-var codeKey = 0;
-var relativeX = 0;
-var inMouse = false;
+let codeKey = 0;
+let relativeX = 0;
+let inMouse = false;
 
 class ControlPaddle extends Control {
 
     constructor(document, canvas, context, figure) {
         super(document, canvas, context, figure);
-        this.keyCommand = new KeyCommand(this.document);
-        this.MouseCommand = new MouseCommand(this.document, this.canvas);
     }
 
     move() {
         switch (codeKey) {
-            case keys.RIGTH:
+            case keys.RIGHT:
                 if (this.figure.posX < (this.canvas.width - this.figure.width)) {
-                    this.figure.goToRigth(7);
+                    this.figure.goToRight(7);
                 }
                 break;
             case keys.LEFT:

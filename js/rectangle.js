@@ -2,9 +2,8 @@
  * Rectangle.
  *
  * @class Rectangle
- * @extends {Figura}
+ * @extends {Figure}
  */
-
 class Rectangle extends Figure {
 
     constructor(canvas, context, posX, posY, fillStyle) {
@@ -13,7 +12,7 @@ class Rectangle extends Figure {
         this.width = 0;
     }
 
-    setHeigth(height) {
+    setHeight(height) {
         this.height = height;
     }
 
@@ -28,5 +27,4 @@ class Rectangle extends Figure {
         this.context.fill();
         this.context.closePath();
     }
-
 }

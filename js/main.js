@@ -2,10 +2,9 @@
  *
  * main
  */
+const canvasPong = document.getElementById("canvas_pong");
 
-var canvasPong = document.getElementById("canvas_pong");
-
-var pong = new Pong(document, canvasPong, 0, 0);
+const pong = new Pong(document, canvasPong, 0, 0);
 
 function draw() {
     pong.draw();
