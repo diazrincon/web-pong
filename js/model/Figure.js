@@ -14,7 +14,7 @@ class Figure    {
         this.width = width;
     }
 
-    move(direction)  {
+    move()  {
         throw new Error("Method 'move()' must be implemented.");
     }
 }
