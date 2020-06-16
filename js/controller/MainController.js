@@ -25,8 +25,6 @@ class MainController {
     render() {
         this.pongGameView.render();
     }
-
-
 }
 
 //MAIN

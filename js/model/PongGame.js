@@ -61,7 +61,9 @@ class PongGame {
     }
 
     moveFigures() {
-
+        this.paddleOne.move()
+        this.paddleTwo.move()
+        this.ball.move()
     }
 
     updateScores() {

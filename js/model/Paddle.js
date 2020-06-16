@@ -22,5 +22,6 @@ class Paddle extends Figure {
             default:
                 break;
         }
+        this.direction = ' '
     }
 }

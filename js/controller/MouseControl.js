@@ -1,11 +1,15 @@
-class MouseControl extends FigureControl    {
+class MouseControl extends FigureControl {
     constructor(figure, document) {
         super(figure, document);
-        this.document.addEventListener("mousemove", this.move(), false);
+        this.document.addEventListener("mousemove", e => this.move(e), false);
     }
 
-    move(e)  {
-        console.log(`move ${this.figure.posY}`);
+    move(event) {
+        if(event.clientY < this.figure.posY)
+            this.figure.direction = 'UP';
+
+        if(event.clientY > this.figure.posY + this.figure.height)
+            this.figure.direction = 'DOWN';
     }
 
 }
